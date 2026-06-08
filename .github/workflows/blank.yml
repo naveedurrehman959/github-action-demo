@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: vars
-        run: echo "hello, {{vars.my_demo}}"
+        run: echo "hello, {{vars.MY_DEMO}}"
 
 
