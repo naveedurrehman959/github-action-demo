@@ -1,12 +1,10 @@
-name: demo_workflow
-on: 
-  workflow_dispatch:
+name: test-workflow
+on: push
 jobs:
   build:
-    name: build jobs
+    name: build-test
     runs-on: ubuntu-latest
     steps:
-       - name: hello-steps
-         run: |
-           echo "running demo build."
-           echo "runnunng 2nd demo."
+      - name: hello-step
+        run: echo "running demo build"
+
