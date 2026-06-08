@@ -1,5 +1,6 @@
 name: demo_workflow
-on: workflow_dispatch
+on: 
+  workflow_dispatch
 jobs:
   build:
     name: build jobs
@@ -7,5 +8,5 @@ jobs:
     steps:
        - name: hello-steps
          run: |
-         echo "running demo build."
-         echo "runnunng 2nd demo."
+           echo "running demo build."
+           echo "runnunng 2nd demo."
