@@ -5,21 +5,7 @@ jobs:
     name: build-test
     runs-on: ubuntu-latest
     steps:
-      - name: hello-step
-        run: echo "running demo build"
-  test:
-    name: testing demo
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: test step
-        run: echo "this is test step"
-  deploy:
-    name: deploy test app
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-      - name: deploying
-        run: echo "deploy app"
+      - name: vars
+        run: echo "hello, {{vars.my_demo}}"
 
 
