@@ -10,7 +10,7 @@ jobs:
   test:
     name: testing demo
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: test step
         run: echo "this is test step"
 
