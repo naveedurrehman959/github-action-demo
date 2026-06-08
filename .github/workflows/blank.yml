@@ -7,4 +7,11 @@ jobs:
     steps:
       - name: hello-step
         run: echo "running demo build"
+  test:
+    name: testing demo
+    runs-on: ubuntu-latest
+    step:
+      - name: test step
+        run: echo "this is test step"
+
 
