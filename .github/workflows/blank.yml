@@ -4,6 +4,6 @@ jobs:
   build:
     name: build jobs
     runs-on: ubuntu-latest
-    steps:
-      - name: hello-steps
-        run: echo "running demo build."
+  steps:
+    - name: hello-steps
+      run: echo "running demo build."
