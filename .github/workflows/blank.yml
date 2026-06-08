@@ -1,8 +1,9 @@
 name: demo_workflow
 on: workflow_dispatch
 jobs:
-  name: test jobs
-  run-on: ubuntu-latest
-  steps:
-    - name: hello-steps
-      run: echo running demo test"
+  build:
+    name: build jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello-steps
+        run: echo "running demo build."
